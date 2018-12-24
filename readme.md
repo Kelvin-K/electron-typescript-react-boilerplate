@@ -206,11 +206,11 @@ include below snippets in vsCode for <B>typescriptReact</B>
 With this below snippets are added for uniformity
 
 
-init -> for state less component
-initr -> for state component
-reducer -> for creating reducer
-clog -> for quick console logging
-class -> for class creation
-interface -> for interface creation
-enum -> for enum creation
-sr -> for static read only variables
+- init -> for state less component
+- initr -> for state component
+- reducer -> for creating reducer
+- clog -> for quick console logging
+- class -> for class creation
+- interface -> for interface creation
+- enum -> for enum creation
+- sr -> for static read only variables
