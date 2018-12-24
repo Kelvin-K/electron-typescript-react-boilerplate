@@ -1,6 +1,6 @@
 {
   "name": "electron-typescript-react-boilerplate",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A boilerplate project for electron using typescript, sass, react  jest, web pack and redux",
   "main": "dist/main.js",
   "dependencies": {
@@ -48,6 +48,10 @@
     "test": "jest",
     "test:watch": "npm run test -- --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelvinoo7/electron-typescript-react-boilerplate.git"
+  },
   "keywords": [
     "electron",
     "typescript",
@@ -57,5 +61,9 @@
     "startup"
   ],
   "author": "Kelvin Kamani",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kelvinoo7/electron-typescript-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Kelvinoo7/electron-typescript-react-boilerplate#readme"
 }
