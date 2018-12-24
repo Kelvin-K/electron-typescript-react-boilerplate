@@ -14,7 +14,7 @@ class Renderer
         if (!InputProps)
             throw "Input props are not defined";
         Renderer.InputProps = InputProps;
-
+        //Render Main Component
         ReactDOM.render(React.createElement(App), document.getElementById("app"));
     }
 }
