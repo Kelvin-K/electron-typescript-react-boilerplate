@@ -4,12 +4,15 @@ import App from "./components/app";
 import IRendererProps from "./interfaces/IRendererProps";
 import "./styles/main";
 
-class Renderer {
+class Renderer
+{
     // external module dependencies like web and electron
     public static InputProps: IRendererProps;
     // main function to start app
-    public static RenderApp = (InputProps: IRendererProps) => {
-        if (!InputProps) {
+    public static RenderApp = (InputProps: IRendererProps) =>
+    {
+        if (!InputProps)
+        {
             throw new Error("Input props are not defined");
         }
         Renderer.InputProps = InputProps;

@@ -1,6 +1,7 @@
 import { UserState } from "../store/reducers/user";
 
-interface IAppState {
+interface IAppState
+{
     user: UserState;
 }
 

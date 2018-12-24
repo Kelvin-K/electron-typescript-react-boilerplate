@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import IAppState from '../interfaces/IAppState';
+import * as React from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import IAppState from "../interfaces/IAppState";
 
 interface StateProps
 {
@@ -17,11 +17,7 @@ export class HelloWorld extends React.Component<StateProps & DispatchProps, any>
 {
     render()
     {
-        return (
-            <div id="HelloWorld">
-                Hello { this.props.userName }
-            </div>
-        );
+        return <div id="HelloWorld">Hello { this.props.userName }</div>;
     }
 }
 
@@ -34,9 +30,7 @@ function connectStateToProps(state: IAppState): StateProps
 
 function connectDispatchToProps(dispatch: any): DispatchProps
 {
-    return bindActionCreators({
-
-    }, dispatch);
+    return bindActionCreators({}, dispatch);
 }
 
 export default connect(connectStateToProps, connectDispatchToProps)(HelloWorld);
