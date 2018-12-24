@@ -37,7 +37,7 @@ module.exports = [
         ...loadersConfig,
     },
     {
-        entry: "./src/renderer/renderer.ts",
+        entry: "./src/renderer/entries/electronRenderer.ts",
         output: {
             filename: "renderer.js",
             path: path.resolve(__dirname, "dist")
