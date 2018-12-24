@@ -29,6 +29,7 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.4",
+    "spectron": "^5.0.0",
     "style-loader": "^0.23.1",
     "ts-jest": "^23.10.5",
     "typescript": "^3.2.2",
@@ -60,7 +61,7 @@
     "create electron app",
     "startup"
   ],
-  "author": "Kelvin Kamani",
+  "author": "Kelvin Kamani <kamani_kelvin@yahoo.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Kelvinoo7/electron-typescript-react-boilerplate/issues"

@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
-import { HelloWorld } from '../renderer/components/helloWorld';
+import { HelloWorld } from '../../renderer/components/helloWorld';
 
 test("Should render", () =>
 {
