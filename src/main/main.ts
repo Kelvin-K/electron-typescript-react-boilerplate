@@ -20,7 +20,7 @@ Electron.app.on('ready', () =>
         y: mainWindowState.y,
         width: mainWindowState.width,
         height: mainWindowState.height,
-        icon: path.resolve(Electron.app.getAppPath(), "./dist/resources/appIcon.ico"),
+        icon: path.resolve(Electron.app.getAppPath(), "./dist/resources/favicon.ico"),
         frame: true,
         show: false
     });
