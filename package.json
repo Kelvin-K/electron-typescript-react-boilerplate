@@ -1,5 +1,5 @@
 {
-  "name": "react-typescript-boilerplate",
+  "name": "electron-boilerplate",
   "version": "0.1.0",
   "description": "",
   "main": "dist/main.js",
