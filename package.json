@@ -1,7 +1,7 @@
 {
   "name": "electron-typescript-react-boilerplate",
   "version": "1.0.0",
-  "description": "A boilerplate project for electron using typescript, sass, react  jest, web pack and redux",
+  "description": "A boilerplate project for electron using typescript, sass, react, jest, spectron, web pack and redux",
   "main": "dist/main.js",
   "dependencies": {
     "electron-window-state": "^5.0.3",
@@ -59,6 +59,8 @@
     "react",
     "sass",
     "create electron app",
+    "jest",
+    "spectron",
     "startup"
   ],
   "author": "Kelvin Kamani <kamani_kelvin@yahoo.com>",
