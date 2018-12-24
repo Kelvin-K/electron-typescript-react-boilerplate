@@ -1,6 +1,6 @@
 # electron-typescript-react-boilerplate
 
-A boilerplate project for electron using typescript, sass, react and redux
+A boilerplate project for electron using typescript, sass, react  jest, web pack and redux
 
 ## styles
 

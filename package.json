@@ -1,7 +1,7 @@
 {
   "name": "electron-typescript-react-boilerplate",
   "version": "0.1.0",
-  "description": "Project setup with electron, typescript, react, sass, jest, web pack",
+  "description": "A boilerplate project for electron using typescript, sass, react  jest, web pack and redux",
   "main": "dist/main.js",
   "dependencies": {
     "electron-window-state": "^5.0.3",
