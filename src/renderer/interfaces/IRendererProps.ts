@@ -1,6 +1,5 @@
-interface IRendererProps
-{
-
+interface IRendererProps {
+    target: string;
 }
 
 export default IRendererProps;

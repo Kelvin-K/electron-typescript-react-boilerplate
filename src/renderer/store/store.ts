@@ -5,9 +5,9 @@ import { UserReducer } from "./reducers/user";
 const store = createStore(
     combineReducers<IAppState>(
         {
-            user: UserReducer
-        }
-    )
+            user: UserReducer,
+        },
+    ),
 );
 
 export default store;
