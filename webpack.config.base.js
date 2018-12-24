@@ -1,9 +1,10 @@
 var path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+var CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const loadersConfig = {
     resolve: {
-        extensions: [ ".js", ".json", ".ts", ".tsx", ".sass" ]
+        extensions: [ ".js", ".json", ".ts", ".tsx", ".scss" ]
     },
     module: {
         rules: [
@@ -20,7 +21,7 @@ const loadersConfig = {
             },
             {
                 test: /\.scss$/,
-                use: [ "style-loader", "css-loader", "sass-loader" ]
+                use: [ "style-loader", "css-loader", "sass-loader", "import-glob-loader" ]
             }
         ]
     }
@@ -47,7 +48,10 @@ module.exports = [
         plugins: [
             new HtmlWebpackPlugin({
                 template: "src/renderer/index.html"
-            })
+            }),
+            new CopyWebpackPlugin([
+                { from: 'src/resources', to: 'resources' }
+            ])
         ]
     }
 ];

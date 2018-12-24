@@ -1,0 +1,20 @@
+@import "./modules/fonts.scss";
+@import "./modules/settings.scss";
+@import "./modules/palate.scss";
+@import "./modules/mixin.scss";
+
+@import "./components/**/*";
+
+html {
+    box-sizing: border-box;
+    font-size: $fontSizeNormal;
+    font-family: $fontFamily;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0px;
+    margin: 0px;
+}
