@@ -1,5 +1,5 @@
 {
-  "name": "electron-boilerplate",
+  "name": "electron-typescript-react-boilerplate",
   "version": "0.1.0",
   "description": "",
   "main": "dist/main.js",
@@ -48,7 +48,14 @@
     "test": "jest",
     "test:watch": "npm run test -- --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "electron",
+    "typescript",
+    "react",
+    "sass",
+    "create electron app",
+    "startup"
+  ],
   "author": "",
   "license": "MIT"
 }

@@ -1,4 +1,4 @@
-# Electron Project Boilerplate
+# electron-typescript-react-boilerplate
 
 A boilerplate project for electron using typescript, sass, react and redux
 
