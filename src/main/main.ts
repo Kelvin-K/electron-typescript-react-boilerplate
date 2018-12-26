@@ -19,7 +19,7 @@ Electron.app.on("ready", () =>
         height: mainWindowState.height,
         icon: path.resolve(
             Electron.app.getAppPath(),
-            "./dist/resources/favicon.ico"
+            "./build/resources/favicon.ico"
         ),
         show: false,
         title: "app",
@@ -32,7 +32,7 @@ Electron.app.on("ready", () =>
 
     mainWindow.loadURL(
         url.format({
-            pathname: path.resolve(Electron.app.getAppPath(), "./dist/index.html"),
+            pathname: path.resolve(Electron.app.getAppPath(), "./build/index.html"),
             protocol: "file:",
             slashes: true
         })

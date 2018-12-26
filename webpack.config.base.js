@@ -36,7 +36,7 @@ module.exports = [
         entry: "./src/main/main.ts",
         output: {
             filename: "main.js",
-            path: path.resolve(__dirname, "dist")
+            path: path.resolve(__dirname, "build")
         },
         target: "electron-main",
         ...loadersConfig,
@@ -45,7 +45,7 @@ module.exports = [
         entry: "./src/renderer/entries/electronRenderer.ts",
         output: {
             filename: "renderer.js",
-            path: path.resolve(__dirname, "dist")
+            path: path.resolve(__dirname, "build")
         },
         target: "electron-renderer",
         ...loadersConfig,

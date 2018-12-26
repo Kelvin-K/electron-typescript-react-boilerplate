@@ -22,7 +22,7 @@ All the components should be included under src/renderer/components
 
 ## Resources
 
-All the resource files will directly included into "dist" folder.
+All the resource files will directly included into "build" folder.
 
 ## webpack
 
