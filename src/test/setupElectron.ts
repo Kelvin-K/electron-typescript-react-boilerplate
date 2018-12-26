@@ -10,6 +10,6 @@ if (process.platform === 'win32')
 const app = new Application({
     path: electronPath,
     args: [ appPath ]
- });
+});
 
 export default app;

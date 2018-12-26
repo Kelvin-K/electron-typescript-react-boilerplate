@@ -1,9 +1,14 @@
-const app = require("../setupElectron");
+import app from "../setupElectron";
 
 test("it should start", async () =>
 {
-    app.start().then(() =>
-    {
-        expect(app.browserWindow.isVisible()).toBeTruthy()
-    })
+    app.start()
+        .then(() =>
+        {
+            expect(app.browserWindow.isVisible()).toBeTruthy();
+        })
+        .catch((error) => 
+        {
+            console.log("error:" + error);
+        })
 });

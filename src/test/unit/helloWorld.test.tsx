@@ -8,5 +8,5 @@ test("Should render", () =>
     const helloWorld = shallow(<HelloWorld userName={ userName } />);
 
     expect(helloWorld).toBeTruthy();
-    expect(helloWorld.text()).toEqual(`Hello ${ userName }`);
+    expect(helloWorld.childAt(1).text()).toEqual(`Hello ${ userName }`);
 });
