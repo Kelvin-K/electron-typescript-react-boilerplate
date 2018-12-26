@@ -22,6 +22,10 @@ const loadersConfig = {
             {
                 test: /\.scss$/,
                 use: [ "style-loader", "css-loader", "sass-loader", "import-glob-loader" ]
+            },
+            {
+                test: /\.svg$/,
+                loader: "svg-url-loader"
             }
         ]
     }

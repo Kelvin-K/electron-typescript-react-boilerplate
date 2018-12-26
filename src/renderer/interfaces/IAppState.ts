@@ -1,4 +1,4 @@
-import { UserState } from "../store/reducers/user";
+import { UserState } from "../store/modules/user";
 
 interface IAppState
 {

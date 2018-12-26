@@ -17,7 +17,12 @@ export class HelloWorld extends React.Component<StateProps & DispatchProps, any>
 {
     render()
     {
-        return <div id="HelloWorld">Hello { this.props.userName }</div>;
+        return (
+            <div id="HelloWorld">
+                <div className="userIcon icon_user" />
+                <div className="userLabel">Hello { this.props.userName }</div>
+            </div>
+        );
     }
 }
 
