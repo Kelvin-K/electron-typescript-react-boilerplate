@@ -2,7 +2,17 @@
 
 A boilerplate project for electron using typescript, sass, react, jest, spectron, web pack and redux
 
-## styles
+## Usage
+
+- <font color="dodgerblue">npm run build</font> => build the script
+- <font color="dodgerblue">npm run start</font> => start electron app
+- <font color="dodgerblue">npm run restart</font> => build and start electron app
+- <font color="dodgerblue">npm run dev</font> => build development version of application and run in web with auto reload
+- <font color="dodgerblue">npm run test</font> => test application
+- <font color="dodgerblue">npm run pack</font> => pack application using electron-packager
+- <font color="dodgerblue">npm run distribute</font> => install node modules, build electron project and pack application
+
+## Styles
 
 All files under ./src/renderer/styles/components are directly included in the project. It is recommended that each component has its own style file
 
