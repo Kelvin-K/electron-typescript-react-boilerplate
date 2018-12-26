@@ -12,7 +12,6 @@ Electron.app.on("ready", () =>
         defaultHeight: 800,
         defaultWidth: 1000
     });
-
     // initiate electron window
     mainWindow = new Electron.BrowserWindow({
         frame: true,
@@ -27,9 +26,9 @@ Electron.app.on("ready", () =>
         x: mainWindowState.x,
         y: mainWindowState.y
     });
-
+    // Set minimum size
     mainWindow.setMinimumSize(200, 200);
-
+    // Load source files
     mainWindow.loadURL(
         url.format({
             pathname: path.resolve(Electron.app.getAppPath(), "./build/index.html"),
@@ -37,15 +36,13 @@ Electron.app.on("ready", () =>
             slashes: true
         })
     );
-
+    // remove menubar
     mainWindow.setMenu(null);
-
     // show window after renderer is ready
     mainWindow.webContents.on("did-finish-load", () =>
     {
         mainWindow.show();
     });
-    mainWindow.webContents.openDevTools();
     // update state when window state changes
     mainWindowState.manage(mainWindow);
 });
