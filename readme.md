@@ -4,7 +4,7 @@ A boilerplate project for electron using typescript, sass, react, jest, spectron
 
 ## styles
 
-All files under [./src/renderer/styles/components]() are directly included in the project. It is recommended that each component has its own style file
+All files under ./src/renderer/styles/components are directly included in the project. It is recommended that each component has its own style file
 
 
 ## Coding Standards
