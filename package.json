@@ -52,7 +52,8 @@
     "dev:hot": "npm run dev -- --hot",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "distribute": "npm install && npm run build && node packageApp.js"
+    "pack": "node packageApp.js",
+    "distribute": "npm install && npm run build && npm run pack"
   },
   "repository": {
     "type": "git",
