@@ -15,11 +15,13 @@ const options = {
     'name': process.env.npm_package_name,
     'ignore': [
         /^\/.vscode/,
+        'bundle_sizes.html',
         /^\/node_modules/,
         /^\/src/,
         '.gitignore',
         'jest.config.js',
         'packageApp.js',
+        'package-lock.json',
         'readme.md',
         'tsconfig.json',
         'webpack.config.base.js',
