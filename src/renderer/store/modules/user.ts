@@ -1,4 +1,5 @@
 import { Reducer } from "redux";
+import StoreConstants from "../../constants/storeConstants";
 
 export class UserState
 {
@@ -6,7 +7,7 @@ export class UserState
 }
 
 export type UserAction =
-    { type: "XYZ" };
+    { type: typeof StoreConstants.xyz };
 
 export const UserReducer: Reducer<UserState, UserAction> = (state: UserState = new UserState(), action: UserAction) =>
 {
