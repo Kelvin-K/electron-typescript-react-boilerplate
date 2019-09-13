@@ -1,0 +1,143 @@
+{
+	"print log": {
+		"prefix": "clog",
+		"body": [
+			"console.log($1);",
+		]
+	},
+	"try catch": {
+		"prefix": "tryc",
+		"body": [
+			"try",
+			"{",
+			"$1",
+			"}",
+			"catch(e) { }"
+		]
+	},
+	"store Module": {
+		"prefix": "reducer",
+		"body": [
+			"import { Reducer } from \"redux\";",
+			"",
+			"export class ${1:${TM_FILENAME_BASE/(.)/${1:/upcase}/}}State",
+			"{",
+			"",
+			"}",
+			"",
+			"export type $1Action =",
+			"\t{ type: \"XYZ\" }",
+			"",
+			"export const $1Reducer:Reducer<$1State,$1Action> = (state: $1State = new $1State(), action: $1Action) =>",
+			"{",
+			"\tswitch (action.type)",
+			"\t{",
+			"\t\tdefault:",
+			"\t\treturn state;",
+			"\t}",
+			"}"
+		]
+	},
+	"instance of class": {
+		"prefix": "class",
+		"body": [
+			"class ${1:${TM_FILENAME_BASE/(.)/${1:/upcase}/}}",
+			"{",
+			"$2",
+			"}",
+			"",
+			"export default $1;"
+		],
+	},
+	"instance of interface": {
+		"prefix": "interface",
+		"body": [
+			"interface ${1:${TM_FILENAME_BASE/(.)/${1:/upcase}/}}",
+			"{",
+			"$2",
+			"}",
+			"",
+			"export default $1;"
+		],
+	},
+	"instance of enum": {
+		"prefix": "enum",
+		"body": [
+			"enum ${1:${TM_FILENAME_BASE/(.)/${1:/upcase}/}}",
+			"{",
+			"$2",
+			"}",
+			"",
+			"export default $1;"
+		],
+	},
+	"static readonly": {
+		"prefix": "sr",
+		"body": "static readonly $1 = \"$1\";"
+	},
+	"initialize Class": {
+		"prefix": "init",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"export default class ${1:${TM_FILENAME_BASE/(.)/${1:/upcase}/}} extends React.Component",
+			"{",
+			"\trender()",
+			"\t{",
+			"\t\treturn (",
+			"\t\t\t<div id=\"$1\">",
+			"\t\t\t\t$2",
+			"\t\t\t</div>",
+			"\t\t);",
+			"\t}",
+			"}"
+		]
+	},
+	"initizlize Redux Class": {
+		"prefix": "initr",
+		"body": [
+			"import * as React from 'react';",
+			"import { connect } from 'react-redux';",
+			"import { bindActionCreators } from 'redux';",
+			"import IAppState from '../interfaces/IAppState';",
+			"",
+			"interface StateProps",
+			"{",
+			"",
+			"}",
+			"",
+			"interface DispatchProps",
+			"{",
+			"",
+			"}",
+			"",
+			"export class ${1:${TM_FILENAME_BASE/(.)/${1:/upcase}/}} extends React.Component<StateProps & DispatchProps, any>",
+			"{",
+			"\trender()",
+			"\t{",
+			"\t\treturn (",
+			"\t\t\t<div id=\"$1\">",
+			"\t\t\t\t$2",
+			"\t\t\t</div>",
+			"\t\t);",
+			"\t}",
+			"}",
+			"",
+			"function connectStateToProps(state: IAppState): StateProps",
+			"{",
+			"\treturn {",
+			"\t\t",
+			"\t};",
+			"}",
+			"",
+			"function connectDispatchToProps(dispatch: any): DispatchProps",
+			"{",
+			"\treturn bindActionCreators({",
+			"\t\t",
+			"\t}, dispatch);",
+			"}",
+			"",
+			"export default connect(connectStateToProps, connectDispatchToProps)($1);"
+		]
+	}
+}
