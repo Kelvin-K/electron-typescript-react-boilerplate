@@ -4,7 +4,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const loadersConfig = {
     resolve: {
-        extensions: [ ".js", ".json", ".ts", ".tsx", ".scss" ]
+        extensions: [".js", ".json", ".ts", ".tsx", ".scss"]
     },
     module: {
         rules: [
@@ -21,7 +21,7 @@ const loadersConfig = {
             },
             {
                 test: /\.scss$/,
-                use: [ "style-loader", "css-loader", "sass-loader", "import-glob-loader" ]
+                use: ["style-loader", "css-loader", "sass-loader", "import-glob-loader"]
             },
             {
                 test: /\.svg$/,
@@ -53,9 +53,11 @@ module.exports = [
             new HtmlWebpackPlugin({
                 template: "src/renderer/index.html"
             }),
-            new CopyWebpackPlugin([
-                { from: 'src/resources', to: 'resources' }
-            ])
+            new CopyWebpackPlugin({
+                patterns: [
+                    { from: 'src/resources', to: 'resources' }
+                ]
+            })
         ]
     }
 ];
