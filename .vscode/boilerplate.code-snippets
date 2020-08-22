@@ -111,7 +111,7 @@
 			"",
 			"}",
 			"",
-			"export class ${1:${TM_FILENAME_BASE/(.)/${1:/upcase}/}} extends React.Component<StateProps & DispatchProps, any>",
+			"export class ${1:${TM_FILENAME_BASE/(.)/${1:/upcase}/}}Component extends React.Component<StateProps & DispatchProps, any>",
 			"{",
 			"\trender()",
 			"\t{",
@@ -137,7 +137,8 @@
 			"\t}, dispatch);",
 			"}",
 			"",
-			"export default connect(connectStateToProps, connectDispatchToProps)($1);"
+			"let $1 = connect(connectStateToProps, connectDispatchToProps)($1Component);",
+			"export default $1"
 		]
 	}
 }
